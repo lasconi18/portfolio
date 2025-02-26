@@ -1,0 +1,187 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte e cores principais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos da navegação */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Seção principal (Hero) */
+#hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Seção de Projetos */
+#projetos {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#projetos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.projetos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.projeto {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.projeto h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.projeto:hover {
+    transform: translateY(-10px);
+}
+
+/* Seção Sobre */
+#sobre {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    height: 42vw;
+}
+
+#sobre p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+#title-about h2 {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 3px solid #444;
+    border-radius: 50px;
+    font-size: 2rem;
+    color: #fffcfc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #444;
+}
+
+
+#text-about{
+    margin-top: 10rem;
+}
+
+/* Rodapé fixo no final da página */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .projetos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projeto {
+        width: 80%;
+    }
+
+    #sobre p {
+        font-size: 1.1rem;
+    }
+}
